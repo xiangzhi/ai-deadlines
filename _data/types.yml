@@ -1,13 +1,7 @@
 ---
-- name: Machine Learning
-  sub: ML
-- name: Computer Vision
-  sub: CV
-- name: Natural Language Proc
-  sub: NLP
-- name: Robotics
+- name: Human-Robot Interaction
+  sub: HRI
+- name: Robotics Centric
   sub: RO
-- name: Speech/SigProc
-  sub: SP
-- name: Data Mining
-  sub: DM
+- name: Human-Computer Interaction Centric
+  sub: HCI
