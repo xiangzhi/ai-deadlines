@@ -70,7 +70,7 @@
   date: July 6-10, 2020
   place: Eindhoven, Netherlands
   note: '<b>NOTE</b>: Mandatory abstract and title deadline on Jan 24, 2020.'
-  sub: CHI
+  sub: HCI
 
 - title: UIST
   year: 2020
@@ -80,7 +80,7 @@
   timezone: America/Los_Angeles
   date: October 20-23, 2020
   place: Minneapolis, USA
-  sub: CHI
+  sub: HCI
 
 - title: CSCW (Jan 2020 Quarter)
   year: 2020
@@ -90,7 +90,7 @@
   timezone: America/Los_Angeles
   date: October 20-23, 2020
   place: Minneapolis, USA
-  sub: CHI
+  sub: HCI
 
 - title: ASSETS
   year: 2020
@@ -100,7 +100,7 @@
   timezone: America/Los_Angeles
   date: "TBA (Previous Year: October 28-30)"
   place: Athens, Greece
-  sub: CHI
+  sub: HCI
 
 
 - title: AAMAS
