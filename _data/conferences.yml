@@ -19,30 +19,36 @@
   place: Las Vegas, USA
   sub: RO
 
-- title: UAI
-  year: 2019
-  id: uai19
-  link: http://auai.org/uai2019/
-  deadline: '2019-03-08 23:59:59'
-  abstract_deadline: '2019-03-04 23:59:59'
-  timezone: UTC-11
-  date: July 22-26, 2019
-  place: Tel Aviv, Israel
-  sub: ML
-  note: '<b>NOTE</b>: Mandatory abstract deadline on March 04, 2019. More info <a
-    href=''http://auai.org/uai2019/cfp.php''>here</a>.'
-
-
 - title: ICRA
   year: 2020
   id: icra20
   link: https://icra2020.org/
   deadline: '2019-09-15 23:59:59'
   timezone: America/Los_Angeles
-  date: May 31-June 4, 2020
+  date: May 31 - June 4, 2020
   place: Paris, France
   sub: RO
 
+
+- title: RO-MAN
+  year: 2020
+  id: roman20
+  link: http://www.ro-man2020.org/
+  deadline: '2020-03-15 23:59:59'
+  timezone: America/Los_Angeles
+  date: August 31 - September 04, 2020
+  place: Naples, Italy
+  sub: HRI
+
+- title: HAI
+  year: 2020
+  id: hai20
+  link: http://hai-conference.net/hai2020/
+  deadline: '2020-05-10 23:59:59'
+  timezone: America/Los_Angeles
+  date: November 10-13, 2020
+  place: Sydney Australia
+  sub: HRI
 
 - title: HRI
   year: 2020
@@ -52,7 +58,50 @@
   timezone: America/Los_Angeles
   date: March 23-26, 2020
   place: Cambridge, UK
-  sub: RO
+  sub: HRI
+
+- title: DIS
+  year: 2020
+  id: dis20
+  link: https://dis.acm.org/2020/
+  deadline: '2020-01-31 23:59:59'
+  abstract_deadline: '2020-01-24 23:59:59' 
+  timezone: America/Los_Angeles
+  date: July 6-10, 2020
+  place: Eindhoven, Netherlands
+  note: '<b>NOTE</b>: Mandatory abstract and title deadline on Jan 24, 2020.'
+  sub: CHI
+
+- title: UIST
+  year: 2020
+  id: uist20
+  link: http://uist.acm.org/uist2020/
+  deadline: '2020-04-01 17:00:00'
+  timezone: America/Los_Angeles
+  date: October 20-23, 2020
+  place: Minneapolis, USA
+  sub: CHI
+
+- title: CSCW (Jan 2020 Quarter)
+  year: 2020
+  id: cscw2020-jan
+  link: https://cscw.acm.org/2020/
+  deadline: '2020-01-15 17:00:00'
+  timezone: America/Los_Angeles
+  date: October 20-23, 2020
+  place: Minneapolis, USA
+  sub: CHI
+
+- title: ASSETS
+  year: 2020
+  id: assets20
+  link: http://assets20.sigaccess.org/
+  deadline: '2020-05-02 17:00:00'
+  timezone: America/Los_Angeles
+  date: TBA (Previous Year: October 28-30)
+  place: Athens, Greece
+  sub: CHI
+
 
 - title: AAMAS
   year: 2020
@@ -63,5 +112,5 @@
   timezone: UTC-12
   date: May 9-13, 2020
   place: Auckland, New Zealand
-  sub: ML
+  sub: RO
   note: '<b>NOTE</b>: Mandatory abstract deadline on Nov 12, 2019. More info <a href=''https://aamas2020.conference.auckland.ac.nz/call-for-papers/''>here</a>.'
