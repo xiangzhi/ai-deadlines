@@ -68,7 +68,8 @@
               </div>
             </div>
         </div>
-        {% for conf in site.data.conferences %}
+        {% assign sorted_conf = site.data.conferences | sort 'deadline' %}
+        {% for conf in sorted_conf %}
         <div id="{{conf.id}}" class="{% for sub in conf.sub %} {{sub}}-conf {% endfor %}">
           <div class="row conf-row">
               <div class="col-xs-5 col-sm-6">
