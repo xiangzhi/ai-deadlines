@@ -82,6 +82,13 @@
           </div>
           </div>
           {% endif %}
+          {% if conf.time_predicted %}
+          <div class="row">
+              <div class="col-xs-12">
+          <span class='conf-predicted'>Predicted Submission Time</span>
+          </div>
+          </div>
+          {% endif %}
           <div class="row conf-row">
               <div class="col-xs-5 col-sm-6">
                   <a class="conf-title" href="/conference?id={{ conf.id }}">{{conf.title}} {{conf.year}}</a>
@@ -175,7 +182,8 @@
 
           // render countdown timer
           $('#{{conf.id}} .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+            // $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+            $(this).html(event.strftime('%D days %Hh %Mm'));
           });
 
           // convert deadline to local timezone

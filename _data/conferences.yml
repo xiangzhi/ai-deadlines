@@ -47,7 +47,7 @@
   deadline: '2020-05-10 23:59:59'
   timezone: America/Los_Angeles
   date: November 10-13, 2020
-  place: Sydney Australia
+  place: Sydney, Australia
   sub: HRI
 
 - title: HRI
@@ -59,6 +59,18 @@
   date: March 23-26, 2020
   place: Cambridge, UK
   sub: HRI
+
+- title: CHI
+  year: 2021
+  id: chi21
+  link: https://chi2021.acm.org/
+  deadline: '2020-09-17 11:59:59'
+  timezone: America/Los_Angeles
+  date: May 8-13, 2021
+  place: Yokohama, Japan
+  note: '<b>NOTE</b>: Mandatory abstract and title deadline on September 10, 2020.'
+  sub: HCI
+  time_predicted: true
 
 - title: HRI
   year: 2021
