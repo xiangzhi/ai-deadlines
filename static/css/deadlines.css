@@ -102,6 +102,10 @@ footer {
   opacity: 0.5;
 }
 
+.hide-past {
+  display: none;
+}
+
 .conf-row {
   margin-bottom: 5px;
 }
@@ -137,6 +141,16 @@ footer {
   padding: 3px 5px;
   cursor: pointer;
   font-weight: 300;
+  border-radius: 4px;
+}
+
+.conf-predicted{
+  color: rgb(255, 0, 0);
+  background: rgba(255, 190, 190, 0.7);
+  font-size: 13px;
+  font-weight: bolder;
+  padding: 3px 5px;
+  border-radius: 4px;  
 }
 
 .conf-sub::selection {

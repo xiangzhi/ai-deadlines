@@ -25,7 +25,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12">
                   <h1>
-                    {{ site.title }} <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ site.description }}{% if site.twitter_hashtag %} #{{ site.twitter_hashtag }}{% endif %}" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    {{ site.title }} 
                     <iframe src="https://ghbtns.com/github-btn.html?user={{ site.github_username }}&repo={{ site.github_repo }}&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
                   </h1>
                 </div>
@@ -63,14 +63,25 @@
               </div>
               <div class="meta col-xs-12">
                 You can optionally export all deadlines to
-                <a href="https://calendar.google.com/calendar/r?cid={{ site.url }}/ai-deadlines.ics">Google Calendar</a> or
-                <a href="/ai-deadlines.ics">.ics</a>.
+                <a href="https://calendar.google.com/calendar/r?cid={{ site.url }}/hri-deadlines.ics">Google Calendar</a> or
+                <a href="/hri-deadlines.ics">.ics</a>.
+              </div>
+              <br/>
+              <div class="meta col-xs-12">
+                Forked and modified from <a href=https://aideadlin.es>aideadlin.es</a>
               </div>
             </div>
         </div>
-        {% assign sorted_conf = site.data.conferences | sort 'deadline' %}
+        {% assign sorted_conf = site.data.conferences | sort: "deadline" %}
         {% for conf in sorted_conf %}
         <div id="{{conf.id}}" class="{% for sub in conf.sub %} {{sub}}-conf {% endfor %}">
+          {% if conf.predicted %}
+          <div class="row">
+              <div class="col-xs-12">
+          <span class='conf-predicted'>Predicted Dates</span>
+          </div>
+          </div>
+          {% endif %}
           <div class="row conf-row">
               <div class="col-xs-5 col-sm-6">
                   <a class="conf-title" href="/conference?id={{ conf.id }}">{{conf.title}} {{conf.year}}</a>
@@ -199,8 +210,10 @@
 
           // check if date has passed, add 'past' class to it
           var today = moment();
-          if (today.diff(confDate) > 0)
+          if (today.diff(confDate) > 0){
+            $('#{{conf.id}}').addClass('hide-past');
             $('#{{conf.id}}').addClass('past');
+          }
         {% endif %}
         {% endfor %}
 
@@ -238,12 +251,12 @@
           var cid = $(this).prop('id');
           var csub = cid.substring(0, cid.length - 9);
           if (checked == true) {
-            $('.' + csub + '-conf').show();
+            $('.' + csub + '-conf').not('.hide-past').show();
             if (subs.indexOf(csub) < 0)
               subs.push(csub);
           }
           else {
-            $('.' + csub + '-conf').hide();
+            $('.' + csub + '-conf').not('.hide-past').hide();
             var idx = subs.indexOf(csub);
             if (idx >= 0)
               subs.splice(idx, 1);
@@ -259,11 +272,11 @@
           for (var i = 0; i < subs.length; i++) {
             if (subs[i] != csub) {
               $('#' + subs[i] + '-checkbox').prop('checked', false);
-              $('.' + subs[i] + '-conf').hide();
+              $('.' + subs[i] + '-conf').not('.hide-past').hide();
             }
             else {
               $('#' + subs[i] + '-checkbox').prop('checked', true);
-              $('.' + subs[i] + '-conf').show();
+              $('.' + subs[i] + '-conf').not('.hide-past').show();
             }
           }
           subs = [csub];
