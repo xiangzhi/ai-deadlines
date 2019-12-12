@@ -218,10 +218,17 @@
 
           // check if date has passed, add 'past' class to it
           var today = moment();
-          if (today.diff(confDate) > 0){
-            $('#{{conf.id}}').addClass('hide-past');
+          var diff = today.diff(confDate)
+          if (diff > 0){
             $('#{{conf.id}}').addClass('past');
+
+            // check if 7 days have passed and hide it if passed.
+            if (diff > (60*60*24*1000*7)){
+              $('#{{conf.id}}').addClass('hide-past');
+            }
           }
+
+
         {% endif %}
         {% endfor %}
 
