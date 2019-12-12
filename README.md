@@ -1,5 +1,5 @@
 ## HRI Deadlines
-Forked and Modified from [ai-deadline.es][1], originally by [Abhishek Das][2].
+Forked and Modified from [ai-deadline.es][1] by [Abhishek Das][2]. 
 License under MIT license.
 
 Countdowns and information for up coming conferences potential human-robot interaction publications. Besides conferences that are setup primarily for human-robot interaction research, we also included conferences in the HCI and Robotics field that also showcase HRI work.
