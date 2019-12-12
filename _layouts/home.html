@@ -77,14 +77,14 @@
         <div id="{{conf.id}}" class="{% for sub in conf.sub %} {{sub}}-conf {% endfor %}">
           {% if conf.predicted %}
           <div class="row">
-              <div class="col-xs-12">
-          <span class='conf-predicted'>Predicted Dates</span>
+              <div class="col-xs-7 col-sm-6 col-sm-offset-6 col-xs-offset-5">
+          <span class='conf-predicted'>Predicted Submission Date</span>
           </div>
           </div>
           {% endif %}
           {% if conf.time_predicted %}
           <div class="row">
-              <div class="col-xs-12">
+              <div class="col-xs-7 col-sm-6 col-sm-offset-6 col-xs-offset-5">
           <span class='conf-predicted'>Predicted Submission Time</span>
           </div>
           </div>
