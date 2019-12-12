@@ -1,10 +1,11 @@
-## AI Deadlines [![Build Status](https://travis-ci.com/abhshkdz/ai-deadlines.svg?branch=gh-pages)](https://travis-ci.com/abhshkdz/ai-deadlines)
+## HRI Deadlines
+Forked and Modified from [ai-deadline.es][1], originally by [Abhishek Das][2].
+License under MIT license.
 
-Countdown timers to keep track of a bunch of CV/NLP/ML/RO conference deadlines.
+Countdowns and information for up coming conferences potential human-robot interaction publications. Besides conferences that are setup primarily for human-robot interaction research, we also included conferences in the HCI and Robotics field that also showcase HRI work.
+
 
 ## Adding/updating a conference
-
-To keep things minimal, I'm only looking to list top-tier conferences in AI as per [conferenceranks.com][6]. Feel free to maintain a separate fork if you don't see your sub-field or conference of interest listed.
 
 To add or update information:
 - Fork the repository
@@ -14,25 +15,7 @@ To add or update information:
 - Optionally add a `note` and `abstract_deadline` in case the conference has a separate mandatory abstract deadline
 - Send a pull request
 
-## Forks & other useful listings
 
-- [geodeadlin.es][3] by @LukasMosser
-- [neuro-deadlines][4] by @tbryn
-- [ai-challenge-deadlines][5] by @dieg0as
-- [CV-oriented ai-deadlines (with an emphasis on medical images)][8] by @duducheng
-- [es-deadlines (Embedded Systems, Computer Architecture, and Cyber-physical Systems)][9] by @AlexVonB and @k0nze
-- [2019-2020 International Conferences in AI, CV, DM, NLP and Robotics][10] by @JackieTseng
 
-## License
-
-[MIT][1]
-
-[1]: https://abhshkdz.mit-license.org/
-[2]: http://aideadlin.es/
-[3]: http://geodeadlin.es/
-[4]: https://github.com/tbryn/neuro-deadlines
-[5]: https://github.com/dieg0as/ai-challenge-deadlines
-[6]: http://www.conferenceranks.com/#
-[8]: https://creedai.github.io/ai-deadlines/
-[9]: https://ekut-es.github.io/es-deadlines/
-[10]: https://jackietseng.github.io/conference_call_for_paper/conferences.html
+[1]: http://aideadlin.es/
+[2]: https://abhishekdas.com/
