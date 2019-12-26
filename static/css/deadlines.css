@@ -205,3 +205,7 @@ footer {
 .calendar img {
   height: 20px;
 }
+
+.hide-past {
+  display: none;
+}

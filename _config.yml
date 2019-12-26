@@ -11,6 +11,8 @@ twitter_hashtag: machinelearning
 github_username: abhshkdz
 github_repo: ai-deadlines
 
+show_past_days: 7
+
 markdown: kramdown
 ga_id: UA-36274081-2
 

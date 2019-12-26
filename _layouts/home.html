@@ -68,7 +68,8 @@
               </div>
             </div>
         </div>
-        {% for conf in site.data.conferences %}
+        {% assign sorted_conf = site.data.conferences | sort: "deadline" %}
+        {% for conf in sorted_conf %}
         <div id="{{conf.id}}" class="{% for sub in conf.sub %} {{sub}}-conf {% endfor %}">
           <div class="row conf-row">
               <div class="col-xs-5 col-sm-6">
@@ -152,6 +153,7 @@
 
         // Get all subs
         var conf_type_data = {{ site.data.types | jsonify }};
+        var show_past_days = {{ site.show_past_days | plus: 0 }};
         var all_subs = [];
         var sub2name = {}; var name2sub = {};
         for (var i = 0; i < conf_type_data.length; i++) {
@@ -207,11 +209,17 @@
 
           // check if date has passed, add 'past' class to it
           var today = moment();
-          if (today.diff(confDate) > 0)
+          var diff = today.diff(confDate)
+          if (diff > 0){
             $('#{{conf.id}}').addClass('past');
-        {% endif %}
+            // check if 7 days have passed and hide it if passed.
+            if (diff > (60*60*24*1000* show_past_days)){
+              $('#{{conf.id}}').addClass('hide-past');
+            }
+          }
+          {% endif %}
         {% endfor %}
-
+        
         // Get subjects from URL
         var url = new URL(window.location);
         var subs = url.searchParams.get('sub');
@@ -246,12 +254,12 @@
           var cid = $(this).prop('id');
           var csub = cid.substring(0, cid.length - 9);
           if (checked == true) {
-            $('.' + csub + '-conf').show();
+            $('.' + csub + '-conf').not('.hide-past').show();
             if (subs.indexOf(csub) < 0)
               subs.push(csub);
           }
           else {
-            $('.' + csub + '-conf').hide();
+            $('.' + csub + '-conf').not('.hide-past').hide();
             var idx = subs.indexOf(csub);
             if (idx >= 0)
               subs.splice(idx, 1);
@@ -260,18 +268,17 @@
           store.set('{{ site.domain }}', subs);
           window.history.pushState('', '', '/?sub=' + subs.join());
         });
-
         // Event handler on sub click
         $('.conf-sub').click(function(e) {
           var csub = $(this).data('sub');
           for (var i = 0; i < subs.length; i++) {
             if (subs[i] != csub) {
               $('#' + subs[i] + '-checkbox').prop('checked', false);
-              $('.' + subs[i] + '-conf').hide();
+              $('.' + subs[i] + '-conf').not('.hide-past').hide();
             }
             else {
               $('#' + subs[i] + '-checkbox').prop('checked', true);
-              $('.' + subs[i] + '-conf').show();
+              $('.' + subs[i] + '-conf').not('.hide-past').show();
             }
           }
           subs = [csub];
@@ -280,7 +287,7 @@
           window.history.pushState('', '', '/?sub=' + subs.join());
         });
     });
-    <!-- Google analytics -->
+     <!-- Google analytics -->
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
