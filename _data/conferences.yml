@@ -44,12 +44,23 @@
   year: 2020
   id: hai20
   link: http://hai-conference.net/hai2020/
-  deadline: '2020-05-10 23:59:59'
+  deadline: '2020-05-17 23:59:59'
   timezone: America/Los_Angeles
   date: November 10-13, 2020
   place: Sydney, Australia
   sub: HRI
-  predicted: true
+  time_predicted: true
+
+- title: ICMI
+  year: 2020
+  id: icmi20
+  link: http://icmi.acm.org/2020/
+  deadline: '2020-05-04 23:59:59'
+  timezone: UTC-7
+  date: October 25-29, 2020
+  place: Utrecht, Netherlands
+  sub: HCI
+
 
 - title: HRI
   year: 2020
@@ -79,8 +90,8 @@
   link: https://humanrobotinteraction.org/2021/
   deadline: '2020-10-01 23:59:59'
   timezone: America/Los_Angeles
-  date: TBA (March, 2021)
-  place: TBA (North America?)
+  date: March 8-11, 2021
+  place: Boulder, USA
   sub: HRI
   predicted: true
 
