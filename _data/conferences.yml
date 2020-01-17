@@ -150,3 +150,14 @@
   place: Auckland, New Zealand
   sub: RO
   note: '<b>NOTE</b>: Mandatory abstract deadline on Nov 12, 2019. More info <a href=''https://aamas2020.conference.auckland.ac.nz/call-for-papers/''>here</a>.'
+
+- title: ICRA
+  year: 2021
+  id: icra21
+  link: ""
+  deadline: '2020-09-15 23:59:59'
+  timezone: America/Los_Angeles
+  date: May 16-22, 2021
+  place: Xi'an, China
+  sub: RO
+  predicted: true
