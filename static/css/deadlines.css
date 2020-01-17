@@ -145,8 +145,17 @@ footer {
 }
 
 .conf-predicted{
-  color: rgb(255, 0, 0);
-  background: rgba(255, 190, 190, 0.7);
+  color:black;
+  background: rgba(255, 150, 150, 0.7);
+  font-size: 13px;
+  font-weight: bolder;
+  padding: 3px 5px;
+  border-radius: 4px;  
+}
+
+.conf-predicted-time{
+  color: black;
+  background: rgba(255, 228, 153, 0.7);
   font-size: 13px;
   font-weight: bolder;
   padding: 3px 5px;
