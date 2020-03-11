@@ -111,10 +111,12 @@
   year: 2020
   id: uist20
   link: http://uist.acm.org/uist2020/
-  deadline: '2020-04-01 17:00:00'
+  deadline: '2020-04-15 17:00:00'
+  abstract_deadline: '2020-04-01 17:00:00'
   timezone: America/Los_Angeles
   date: October 20-23, 2020
   place: Minneapolis, USA
+  note: '<b>NOTE</b>: Mandatory abstract and title deadline on April 1, 2020.'
   sub: HCI
 
 - title: CSCW (Jan 2020 Quarter)
