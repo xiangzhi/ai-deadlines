@@ -44,18 +44,19 @@
   year: 2020
   id: hai20
   link: http://hai-conference.net/hai2020/
-  deadline: '2020-05-17 23:59:59'
+  deadline: '2020-06-31 23:59:59'
   timezone: America/Los_Angeles
   date: November 10-13, 2020
-  place: Sydney, Australia
+  place: Virtual
   sub: HRI
-  time_predicted: true
+  date_predicted: true
+  note: '<b>NOTE</b>: Extended Deadline TBA
 
 - title: ICMI
   year: 2020
   id: icmi20
   link: http://icmi.acm.org/2020/
-  deadline: '2020-05-04 23:59:59'
+  deadline: '2020-05-29 23:59:59'
   timezone: UTC-7
   date: October 25-29, 2020
   place: Utrecht, Netherlands
