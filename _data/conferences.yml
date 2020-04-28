@@ -44,13 +44,11 @@
   year: 2020
   id: hai20
   link: http://hai-conference.net/hai2020/
-  deadline: '2020-06-30 23:59:59'
+  deadline: '2020-06-19 23:59:59'
   timezone: America/Los_Angeles
   date: November 10-13, 2020
   place: Virtual
   sub: HRI
-  date_predicted: true
-  note: '<b>NOTE</b>: Extended Deadline TBA'
 
 - title: ICMI
   year: 2020
