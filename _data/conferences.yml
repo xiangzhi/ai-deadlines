@@ -44,8 +44,8 @@
   year: 2020
   id: hai20
   link: http://hai-conference.net/hai2020/
-  deadline: '2020-06-19 23:59:59'
-  timezone: America/Los_Angeles
+  deadline: '2020-06-22 23:59:59'
+  timezone: UTC-10
   date: November 10-13, 2020
   place: Virtual
   sub: HRI
