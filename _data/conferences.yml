@@ -171,3 +171,15 @@
   date: Nov 14-16, 2020
   place: Golden, Colorado (Colorado School of Mines)
   sub: RO
+
+- title: AAAI
+  year: 2021
+  id: aaai2021
+  link: https://aaai.org/Conferences/AAAI-21
+  deadline: '2020-09-09 23:59:59'
+  abstract_deadline: '2020-09-01 23:59:59'
+  timezone: America/Los_Angeles
+  date: February 2-9, 2021
+  place: Vancouver, Canada
+  sub: AI
+  note: '<b>NOTE</b>: Mandatory abstract deadline on Sep 1, 2020. More info <a href=''https://aaai.org/Conferences/AAAI-21/iaai-21-call/''>here</a>.'
