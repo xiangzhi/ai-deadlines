@@ -5,3 +5,5 @@
   sub: RO
 - name: Human-Computer Interaction Centric
   sub: HCI
+- name: Artificial Intelligence + Machine Learning
+  sub: AI
