@@ -71,6 +71,16 @@
   place: Cambridge, UK
   sub: HRI
 
+- title: AI-HRI
+  year: 2020
+  id: aihri20
+  link: https://ai-hri.github.io/2020/
+  deadline: '2020-08-06 23:59:59'
+  timezone: UTC-12
+  date: Novemeber 13-14, 2020
+  place: Virtual
+  sub: HRI
+
 - title: CHI
   year: 2021
   id: chi21
