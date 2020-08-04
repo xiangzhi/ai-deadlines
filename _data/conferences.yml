@@ -87,12 +87,11 @@
   year: 2021
   id: hri21
   link: https://humanrobotinteraction.org/2021/
-  deadline: '2020-10-01 23:59:59'
-  timezone: America/Los_Angeles
+  deadline: '2020-10-05 23:59:59'
+  timezone: UTC-12
   date: March 8-11, 2021
   place: Boulder, USA
   sub: HRI
-  predicted: true
 
 - title: DIS
   year: 2020
