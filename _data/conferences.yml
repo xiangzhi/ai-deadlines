@@ -193,3 +193,12 @@
   sub: RO
   note: '<b>NOTE</b>: Mandatory abstract deadline on Oct 2, 2020. More info <a href=''https://aamas2021.soton.ac.uk/calls/papers/''>here</a>.'
 
+  - title: CSCW
+  year: 2021
+  id: cscw2021
+  link: https://cscw.acm.org/2020/
+  deadline: '2020-10-15 23:59:59'
+  timezone: UTC-12
+  date: November 03-07, 2021
+  place: Toronto, Canada
+  sub: HCI
