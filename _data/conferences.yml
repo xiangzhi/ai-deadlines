@@ -193,7 +193,7 @@
   sub: RO
   note: '<b>NOTE</b>: Mandatory abstract deadline on Oct 2, 2020. More info <a href=''https://aamas2021.soton.ac.uk/calls/papers/''>here</a>.'
 
-  - title: CSCW
+- title: CSCW
   year: 2021
   id: cscw2021
   link: https://cscw.acm.org/2020/
