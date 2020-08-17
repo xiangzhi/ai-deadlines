@@ -66,8 +66,7 @@
             <div class="row">
               <div class="meta col-xs-12">
                 <span class="local-timezone-hide">
-                  Deadlines are shown in <span class="local-timezone">America/New_York</span> time.
-                  To view them in conference website timezones, click on them.
+                  Deadlines are shown in both your time zone, <b><span class="local-timezone">America/New_York</span></b> time, and the listed time zone on the conference website. 
                 </span>
               </div>
               <div class="meta col-xs-12">
@@ -122,8 +121,11 @@
             </div>
             <div class="col-xs-12 col-sm-6">
               <div class="deadline">
-                <div>Deadline:
+                <div>Deadline (Yours):
                   <span class="deadline-time"></span>
+                </div>
+                <div>Deadline (Listed):
+                  <span class="deadline-time-listed"></span>
                 </div>
               </div>
               <div class="calendar"></div>
@@ -198,7 +200,8 @@
           // convert deadline to local timezone
           try {
             var localConfDate = moment.tz(confDate, local_timezone);
-            $('#{{conf.id}} .deadline-time').html(localConfDate.toString());
+            $('#{{conf.id}} .deadline-time').html(localConfDate.format("llll").toString());
+            $('#{{conf.id}} .deadline-time-listed').html(confDate.format("llll [GMT]ZZ").toString());
           }
           catch(err) {
             console.log("Error converting to local timezone.");
