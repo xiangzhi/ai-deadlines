@@ -55,13 +55,13 @@
 - title: DIS
   year: 2021
   id: dis21
-  link: https://dis.acm.org/2020/
-  deadline: '2021-01-31 23:59:59'
-  abstract_deadline: '2021-01-24 23:59:59' 
+  link: https://dis.acm.org/2021/
+  deadline: '2021-02-11 17:00:00'
+  abstract_deadline: '2021-02-04 17:00:00' 
   timezone: America/Los_Angeles
-  date: TBA
-  place: TBA
-  note: '<b>NOTE</b>: Mandatory abstract and title deadline (TBA).'
+  date: June 28 - July 2, 2021
+  place: Virtual
+  note: '<b>NOTE</b>: Mandatory abstract and title deadline.'
   sub: HCI
   predicted: true
 
