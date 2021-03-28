@@ -1,4 +1,17 @@
 ---
+
+- title: DIS
+  year: 2021
+  id: dis21
+  link: https://dis.acm.org/2021/
+  deadline: '2021-02-11 17:00:00'
+  abstract_deadline: '2021-02-04 17:00:00' 
+  timezone: America/Los_Angeles
+  date: June 28 - July 2, 2021
+  place: Virtual
+  note: '<b>NOTE</b>: Mandatory abstract and title deadline on Feb 04, 2021'
+  sub: HCI
+
 - title: RSS
   year: 2021
   id: rss21
@@ -31,52 +44,6 @@
   sub: HRI
   time_predicted: true
 
-- title: CHI
-  year: 2021
-  id: chi21
-  link: https://chi2021.acm.org/
-  deadline: '2020-09-17 12:00:00'
-  timezone: America/Los_Angeles
-  date: May 8-13, 2021
-  place: Yokohama, Japan
-  note: '<b>NOTE</b>: Mandatory abstract and title deadline on September 10, 2020.'
-  sub: HCI
-
-- title: HRI
-  year: 2021
-  id: hri21
-  link: https://humanrobotinteraction.org/2021/
-  deadline: '2020-10-05 23:59:59'
-  timezone: UTC-12
-  date: March 8-11, 2021
-  place: Boulder, USA
-  sub: HRI
-
-- title: DIS
-  year: 2021
-  id: dis21
-  link: https://dis.acm.org/2021/
-  deadline: '2021-02-11 17:00:00'
-  abstract_deadline: '2021-02-04 17:00:00' 
-  timezone: America/Los_Angeles
-  date: June 28 - July 2, 2021
-  place: Virtual
-  note: '<b>NOTE</b>: Mandatory abstract and title deadline on Feb 04, 2021'
-  sub: HCI
-
-- title: UIST
-  year: 2021
-  id: uist21
-  link: http://uist.acm.org/uist2021/
-  deadline: '2021-04-15 17:00:00'
-  abstract_deadline: '2021-04-01 17:00:00'
-  timezone: America/Los_Angeles
-  date: October 10-13, 2021
-  place: San Diego, USA
-  note: '<b>NOTE</b>: Mandatory abstract and title deadline (TBA)'
-  sub: HCI
-  predicted: true
-
 - title: CSCW (Jan 2021 Quarter)
   year: 2021
   id: cscw2021-jan
@@ -91,33 +58,55 @@
   year: 2021
   id: assets21
   link: http://assets21.sigaccess.org/
-  deadline: '2021-05-01 17:00:00'
+  deadline: '2021-04-14 17:00:00'
   timezone: America/Los_Angeles
-  date: TBA
-  place: TBA
+  date: Oct 18-22, 2021
+  place: Virtual
   sub: HCI
 
-- title: AAMAS
-  year: 2020
-  id: aamas20
-  link: https://aamas2020.conference.auckland.ac.nz/
-  deadline: '2019-11-15 23:59:59'
-  abstract_deadline: '2019-11-12 23:59:59'
-  timezone: UTC-12
-  date: May 9-13, 2020
-  place: Auckland, New Zealand
-  sub: RO
-  note: '<b>NOTE</b>: Mandatory abstract deadline on Nov 12, 2019. More info <a href=''https://aamas2020.conference.auckland.ac.nz/call-for-papers/''>here</a>.'
-
-- title: ICRA
+- title: UIST
   year: 2021
-  id: icra21
-  link: "http://2021.ieee-icra.org/index.aspx"
-  deadline: '2020-10-31 23:59:59'
+  id: uist21
+  link: http://uist.acm.org/uist2021/
+  deadline: '2021-04-07 17:00:00'
+  abstract_deadline: '2021-03-31 17:00:00'
   timezone: America/Los_Angeles
-  date: May 16-22, 2021
-  place: Xi'an, China
-  sub: RO
+  date: October 10-13, 2021
+  place: virtual
+  note: '<b>NOTE</b>: Mandatory abstract and title deadline (March 31, 2021)'
+  sub: HCI
+
+- title: CSCW (April Quarter)
+  year: 2021
+  id: cscw2021
+  link: https://cscw.acm.org/2021/
+  deadline: '2021-04-15 23:59:59'
+  timezone: UTC-12
+  date: Oct 23-27, 2021
+  place: Virtual
+  sub: HCI
+
+- title: ICMI
+  year: 2021
+  id: icmi21
+  link: http://icmi.acm.org/2021/
+  deadline: '2021-05-26 23:59:59'
+  timezone: UTC-7
+  date: October 18-22, 2021
+  place: Montreal, Canada
+  sub: HCI
+  time_predicted: true
+
+- title: HAI
+  year: 2021
+  id: hai21
+  link: https://hai-conference.net/hai2021
+  deadline: '2021-06-21 17:00:00'
+  timezone: America/Los_Angeles
+  date: Nov 9-11, 2021
+  place: Virtual
+  sub: HRI
+  time_predicted: true
 
 - title: ICSR
   year: 2020
@@ -128,6 +117,29 @@
   date: Nov 14-16, 2020
   place: Golden, Colorado (Colorado School of Mines)
   sub: RO
+
+- title: CHI
+  year: 2022
+  id: chi22
+  link: https://chi2022.acm.org/
+  deadline: '2021-09-17 12:00:00'
+  timezone: America/Los_Angeles
+  date: April 30 - May 6, 2022
+  place: New Orleans, LA, USA
+  # note: '<b>NOTE</b>: Mandatory abstract and title deadline on September 10, 2020.'
+  sub: HCI
+  date_predicted: true
+
+- title: HRI
+  year: 2022
+  id: hri22
+  link: https://humanrobotinteraction.org/2022/
+  deadline: '2021-10-05 23:59:59'
+  timezone: UTC-12
+  date: March 7-10, 2022
+  place: Sapporo, Hokkaido, Japan
+  sub: HRI
+  date_predicted: true
 
 - title: AAAI
   year: 2021
@@ -153,23 +165,25 @@
   sub: RO
   note: '<b>NOTE</b>: Mandatory abstract deadline on Oct 2, 2020. More info <a href=''https://aamas2021.soton.ac.uk/calls/papers/''>here</a>.'
 
-- title: CSCW
-  year: 2021
-  id: cscw2021
-  link: https://cscw.acm.org/2020/
-  deadline: '2020-10-15 23:59:59'
-  timezone: UTC-12
-  date: November 03-07, 2021
-  place: Toronto, Canada
-  sub: HCI
-
-- title: ICMI
-  year: 2021
-  id: icmi21
-  link: http://icmi.acm.org/2021/
-  deadline: '2021-05-07 23:59:59'
-  timezone: UTC-7
-  date: October 18-22, 2021
-  place: Montreal, Canada
-  sub: HCI
+- title: ICRA
+  year: 2022
+  id: icra22
+  link: "https://www.icra2022.org/"
+  deadline: '2021-09-14 23:59:59'
+  timezone: America/Los_Angeles
+  date: May 23-27, 2022
+  place: Philadelphia, USA
+  sub: RO
   time_predicted: true
+
+- title: AAMAS
+  year: 2020
+  id: aamas20
+  link: https://aamas2020.conference.auckland.ac.nz/
+  deadline: '2019-11-15 23:59:59'
+  abstract_deadline: '2019-11-12 23:59:59'
+  timezone: UTC-12
+  date: May 9-13, 2020
+  place: Auckland, New Zealand
+  sub: RO
+  note: '<b>NOTE</b>: Mandatory abstract deadline on Nov 12, 2019. More info <a href=''https://aamas2020.conference.auckland.ac.nz/call-for-papers/''>here</a>.'
